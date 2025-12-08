@@ -1,0 +1,62 @@
+{
+    "Mandate al db per uploadare appunti":  {
+        "Foto": "gestione immagini bit",
+        "Materia": "materia degli appunti",
+        "Anno": "anno degli appunti",
+        "Professore": "prof degli appunti",
+        "Argomento": "argomento degli appunti",
+        "email": "email di chi carica l'appunto"
+    },
+    "Mandate al db per modificare l'account": {
+        "FotoProfilo": "gestione immagini bit",
+        "Biografia": "biografia nuova"
+    },
+    "Ricevute dal db per poter uploadare gli appunti": {
+        "Materie": "materie disponibili (prese dai prof di quella scuola)",
+        "Anni": "anni disponibili",
+        "Professori": "prof disponibili"
+    },
+    "Ricevute dal db per visualizzare l'account": {
+        "FotoProfilo": "gestione immagini (link foto)",
+        "Biografia": "biografia dell'utente",
+        "Classe": "classe utente",
+        "Nome": "nome utente",
+        "Cognome": "Cognome utente",
+        "NAppuntiCaricati": "numero id appunit caricati dall'utente",
+        "chiamata http a /appunti dove chiede solo quelli dello studente (da implementeare)": "x"
+    },
+    "data": {
+        "account": {
+            "foto": "https://class-mate.s3.eu-north-1.amazonaws.com/profiles/1_profile_pic.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIA6ODUZEUQ2A2DDDHB%2F20240527%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240527T081011Z&X-Amz-Expires=3600&X-Amz-Signature=a8a137110309395ee1a3b5450a2f30b99e89e103ff492f382ce71c52beb02e98&X-Amz-SignedHeaders=host&x-id=GetObject",
+            "biografia": "bio di provina",
+            "classe": "5I",
+            "nome": "Giuliano",
+            "cognome": "Manzi",
+            "numeroAppuntiCaricati": 10,
+            "id": 1,
+            "scuola": "issp"
+        },
+        "opzioni": {
+            "materie": [
+                "informatica",
+                "italiano",
+                "sistemi e reti",
+                "gestione progetto e organizzazione di impresa"
+            ],
+            "professori": [
+                "toni greco",
+                "brunella tombetti",
+                "francesco tappi",
+                "carlo biondi"
+            ],
+            "anni": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        }
+    }
+    
+}

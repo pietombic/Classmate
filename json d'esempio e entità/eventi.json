@@ -1,0 +1,25 @@
+{
+    "da ricevere per visualizzarli":{
+        "eventi":[
+            {
+                "ide":"id evento",
+                "testo":"testo evento",
+                "foto":"foto evento",
+                "studente":"id dello studente che lo ha pubblicato"
+            },
+            {
+                "ide":"id evento",
+                "testo":"testo evento",
+                "foto":"foto evento",
+                "studente":"id dello studente che lo ha pubblicato"
+            }
+        ]
+    },
+    "da inviare per caricarli":{
+        "evento":{
+            "testo":"testo evento",
+            "foto":"foto evento",
+            "email":"email dello studente che lo ha pubblicato"
+        }
+    }
+}

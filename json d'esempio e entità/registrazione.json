@@ -1,0 +1,20 @@
+{
+    "Inviati nel body per essere inseriti nella tabella studentprovvisori": {
+        "Nome": "nome studente",
+        "Cognome": "cognome studente",
+        "Cellulare": "cellulare studente",
+        "Classe": "classe studente",
+        "Scuola": "nome della scuola studente",
+        "Anno": "anno studente",
+        "Email": "email",
+        "password": "password"
+    },
+    "inviate dal db al fe per visualizzare i dati (una per scuola)": {
+        "Scuola": "nome scuola",
+        "anni": "numero di anni in quella scuola"
+    },
+    "Inviate dal db al fe per visualizzare i dati": {
+        "Nome": "nome studente in attesa",
+        "Scuola": "scuola dello studente in attesa"
+    }
+}

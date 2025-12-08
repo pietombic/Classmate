@@ -1,0 +1,30 @@
+{
+  "name": "account",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm i && nodemon src/server.js",
+    "start": "node src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.556.0",
+    "@aws-sdk/s3-request-presigner": "^3.556.0",
+    "axios": "^1.6.8",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "file-type": "^19.0.0",
+    "http-status": "^1.7.4",
+    "image-type": "^5.2.0",
+    "joi": "^17.13.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.0",
+    "pg": "^8.11.5",
+    "stringify": "^2.2.0",
+    "typeorm": "^0.3.20"
+  }
+}

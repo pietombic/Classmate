@@ -1,0 +1,9 @@
+mkdir ../db/data/pg_notify 
+mkdir ../db/data/pg_tblspc 
+mkdir ../db/data/pg_replslot 
+mkdir ../db/data/pg_twophase 
+mkdir ../db/data/pg_stat_tmp 
+mkdir ../db/data/pg_logical/snapshots 
+mkdir ../db/data/pg_logical/mappings 
+mkdir ../db/data/pg_commit_ts 
+mkdir ../db/data/pg_snapshots

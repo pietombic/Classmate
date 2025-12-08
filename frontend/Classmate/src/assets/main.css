@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --background-color-dark-mode: #111;
+    --background-color-dark-mode-2: #1b1b1b;
+    --background-color-dark-mode-3: #202020;
+    --font-color-dark-mode: #eee;
+    --font-color-dark-mode-secondary: #4d4d4d;
+    --border-color-dark-mode: #2a2a2a;
+    --border-color-dark-mode-hover: #505050;
+    --background-color-checkbox: #808080;
+    --background-color-dark-mode-4: #2d2d2d;
+    --background-color-dark-mode-5: #2c2c2e;
+    
+    /* --background-color-dark-mode: #eee;
+    --background-color-dark-mode-2: #efefef;
+    --background-color-dark-mode-3: #aaaa;
+    --font-color-dark-mode: #000;
+    --border-color-dark-mode: #BBB;
+    --border-color-dark-mode-hover: #505050;
+    --background-color-checkbox: #808080; */
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color-dark-mode: #111;
+        --background-color-dark-mode-2: #191919;
+        --background-color-dark-mode-3: #202020;
+        --font-color-dark-mode: #eee;
+        --border-color-dark-mode: #191919;
+        --border-color-dark-mode-hover: #505050;
+        --background-color-checkbox: #808080;
+        --background-color-dark-mode-5: #2c2c2e;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --background-color-dark-mode: #eee;
+        --background-color-dark-mode-2: #efefef;
+        --background-color-dark-mode-3: #aaaa;
+        --font-color-dark-mode: #000;
+        --border-color-dark-mode: #BBB;
+        --border-color-dark-mode-hover: #505050;
+        --background-color-checkbox: #808080;
+        --background-color-dark-mode-5: transparent;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.notes {
+    width: 100%;
+    height: 100%;
+    display: grid !important;
+    grid-template-rows: 200px 1fr;
+    transition: .2s ease-in-out;
+    position: relative;
+}
+
+.notes:hover {
+    grid-template-rows: 200px 1fr;
+    /* Keep the height same to prevent jumping */
+}
+
+.notes img {
+    height: 100% !important;
+    display: block;
+    border-radius: 10px 10px 0 0 !important;
+    transition: opacity 0.2s ease-in-out;
+}
+.new_notes{
+    width: 100%;
+    height: 100%;
+    display: grid !important;
+    grid-template-columns: 500px 1fr;
+    transition: .2s ease-in-out;
+    position: relative;
+    border-radius: 10px;
+    background-color: var(--background-color-dark-mode-3);
+}
+.new_notes img{
+    width: 100%;
+}
+.notes .btn_open {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 10px 10px 0 0;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.input_file_profile_picture::file-selector-button {
+    border: none;
+    background-color: var(--background-color-dark-mode-4);
+    color: var(--font-color-dark-mode);
+    margin: 30px 0;
+}
+
+.notes:hover img {
+    opacity: 0;
+}
+
+.notes:hover .btn_open {
+    opacity: 1;
+}
+
+.notes .element {
+    background-color: var(--background-color-dark-mode-4);
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+}
+
+.student_par {
+    font-size: 1rem;
+    color: var(--font-color-dark-mode-secondary);
+}
+
+.subject_par {
+    font-size: 1rem;
+    color: var(--font-color-dark-mode-secondary);
+}
+
+.title_par {
+    font-size: 1.5rem;
+    color: var(--font-color-dark-mode);
+}
+
+/* prova commit*/
+body {
+    overflow: hidden;
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--background-color-dark-mode);
+    color: var(--font-color-dark-mode) !important;
+}
+
+.title {
+    font-size: 3vw;
+    padding: 2vw;
+}
+
+.sizing1 {
+    font-size: 1.3vw;
+}
+
+.link-footer:hover {
+    text-decoration: underline !important;
+}
+
+.name-footer {
+    margin-left: 0 !important;
+}
+
+.title-footer {
+    margin-bottom: 2vw;
+}
+
+.colonna {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-class {
+    margin: 2vw auto;
+    width: fit-content;
+}
+
+.colonna a {
+    color: rgb(0, 0, 0);
+    text-decoration: none !important;
+}
+
+.colonna a:hover {
+    text-decoration: underline !important;
+}
+
+
+/* classi con funzioni varie */
+.atBottom {
+    position: absolute;
+    bottom: 0;
+}
+
+.centerVertical {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    object-fit: cover;
+    font-style: normal;
+}
+
+.spaceBetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.grid_two_parts {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.venticinque * {
+    color: var(--font-color-dark-mode);
+}
+
+.left_col {
+    background-color: transparent;
+    border-right: 1px solid var(--border-color-dark-mode);
+    width: 100%;
+    background-size: cover;
+    padding: 0 40px;
+    height: 85vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.grow {
+    transition: all 0.2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(0.9);
+}
+
+.scrollable {
+    overflow-y: scroll !important;
+}
+
+.scrollable::-webkit-scrollbar {
+    display: none;
+}
+
+.open_note_button {
+    border: 1px solid var(--border-color-dark-mode);
+    padding: 5px 20px;
+    border-radius: 15px;
+    background-color: var(--background-color-dark-mode);
+    transition: ease-in-out 0.2s;
+}

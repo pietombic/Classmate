@@ -1,0 +1,120 @@
+services:
+  gateway:
+    build:
+      dockerfile: infrastructure/dev/dockerfiles/std.node.Dockerfile
+      context: ../..
+      args:
+        SERVICE_PATH: ./gateway
+    volumes:
+      - ../../gateway:/usr/src/server
+    ports:
+      - '3000:3000'
+    networks:
+      - backend
+    depends_on:
+      - appunti
+      # - registrazione
+      - account
+      # - scuola
+      - eventi
+      # - impostazioni
+
+  appunti:
+    build:
+      dockerfile: infrastructure/dev/dockerfiles/std.node.Dockerfile
+      context: ../..
+      args:
+        SERVICE_PATH: ./backend/appunti
+    volumes:
+      - ../../backend/appunti:/usr/src/server
+    networks:
+      - backend
+      - db
+    depends_on:
+      - db
+    
+  # registrazione:
+  #   build:
+  #     dockerfile: infrastructure/dev/dockerfiles/std.node.Dockerfile
+  #     context: ../..
+  #     args:
+  #       SERVICE_PATH: ./backend/registrazione
+  #   volumes:
+  #     - ../../backend/registrazione:/usr/src/server
+  #   networks:
+  #     - backend
+  #     - db
+  #   depends_on:
+  #     - db
+
+  account:
+    build:
+      dockerfile: infrastructure/dev/dockerfiles/std.node.Dockerfile
+      context: ../..
+      args:
+        SERVICE_PATH: ./backend/account
+    volumes:
+      - ../../backend/account:/usr/src/server
+    networks:
+      - backend
+      - db
+    depends_on:
+      - db
+
+  # scuola:
+  #   build:
+  #     dockerfile: infrastructure/dev/dockerfiles/std.node.Dockerfile
+  #     context: ../..
+  #     args:
+  #       SERVICE_PATH: ./backend/scuola
+  #   volumes:
+  #     - ../../backend/scuola:/usr/src/server
+  #   networks:
+  #     - backend
+  #     - db
+  #   depends_on:
+  #     - db
+
+  eventi:
+    build:
+      dockerfile: infrastructure/dev/dockerfiles/std.node.Dockerfile
+      context: ../..
+      args:
+        SERVICE_PATH: ./backend/eventi
+    volumes:
+      - ../../backend/eventi:/usr/src/server
+    networks:
+      - backend
+      - db
+    depends_on:
+      - db
+
+  # impostazioni:
+  #   build:
+  #     dockerfile: infrastructure/dev/dockerfiles/std.node.Dockerfile
+  #     context: ../..
+  #     args:
+  #       SERVICE_PATH: ./backend/impostazioni
+  #   volumes:
+  #     - ../../backend/impostazioni:/usr/src/server
+  #   networks:
+  #     - backend
+  #     - db
+  #   depends_on:
+  #     - db
+
+  db:
+    image: postgres:16-alpine
+    restart: always
+    ports:
+      - 5432:5432
+    env_file:
+      - .env
+    volumes:
+      - ../../db/data:/var/lib/postgresql/data
+    networks:
+      - db
+
+networks:
+  backend:
+  db:

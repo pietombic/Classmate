@@ -1,0 +1,113 @@
+{
+    "mandate al db per ottenerne altre (/appunti)": {
+        "email (body)": "email studente",
+        "filtri (params)": {
+            "materia": "x",
+            "professore": "x",
+            "anno": "x"
+        }
+    },
+    "ritornate all'utente per visualizzarle": {
+        "appunti (/appunti o /appunti/id:)": {
+            "appuntox": {
+                "id": "id appunto",
+                "Studente": "utente che ha caricato l'appunto",
+                "Foto": "gestione immagini (link foto?)",
+                "Materia": "materia degli appunti",
+                "Anno": "anno degli appunti",
+                "Professore": "prof degli appunti",
+                "Argomento": "argomento degli appunti"
+            },
+            "appuntoy":{
+                "Studente": "utente che ha caricato l'appunto",
+                "Foto": "gestione immagini (link foto?)",
+                "Materia": "materia degli appunti",
+                "Anno": "anno degli appunti",
+                "Professore": "prof degli appunti",
+                "Argomento": "argomento degli appunti"
+            }
+        },
+        "filtri": {
+            "materie": ["x", "y"],
+            "professori": ["x", "y"],
+            "anni": ["x", "y"]
+        }
+    },
+    
+    "data": {
+        "appunti": [
+            {
+                "id": 55,
+                "materia": "italiano",
+                "anno": 1,
+                "professore": "Brunella Tombetti",
+                "argomento": "Pascoli",
+                "studente": 1,
+                "foto": "https://class-mate.s3.eu-north-1.amazonaws.com/appunti/appunti_55.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIA6ODUZEUQ2A2DDDHB%2F20240525%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240525T104912Z&X-Amz-Expires=3600&X-Amz-Signature=0342534f3e12d20d8604a89f715fc3b2c5d8ab8d8dbf67e608533daeea35346e&X-Amz-SignedHeaders=host&x-id=GetObject"
+            },
+            {
+                "id": 10,
+                "materia": "informatica",
+                "anno": 5,
+                "professore": "Toni Greco",
+                "argomento": "blazor",
+                "studente": 3,
+                "foto": "https://class-mate.s3.eu-north-1.amazonaws.com/appunti/appunti_10.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIA6ODUZEUQ2A2DDDHB%2F20240525%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240525T104912Z&X-Amz-Expires=3600&X-Amz-Signature=a047b78059c838aa5d048065f4fd2b287f2926b7a19de6fc1598419bbf74abc5&X-Amz-SignedHeaders=host&x-id=GetObject"
+            },
+            {
+                "id": 13,
+                "materia": "informatica",
+                "anno": 3,
+                "professore": "Toni Greco",
+                "argomento": "C#",
+                "studente": 2,
+                "foto": "https://class-mate.s3.eu-north-1.amazonaws.com/appunti/appunti_13.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIA6ODUZEUQ2A2DDDHB%2F20240525%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240525T104912Z&X-Amz-Expires=3600&X-Amz-Signature=d5aa92c87ddfb68e67db2e7471b6d42367686a9b9d08e1e8698198facd3c43e7&X-Amz-SignedHeaders=host&x-id=GetObject"
+            },
+            {
+                "id": 11,
+                "materia": "italiano",
+                "anno": 4,
+                "professore": "Brunella Tombetti",
+                "argomento": "leopardi",
+                "studente": 2,
+                "foto": "https://class-mate.s3.eu-north-1.amazonaws.com/appunti/appunti_11.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIA6ODUZEUQ2A2DDDHB%2F20240525%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240525T104912Z&X-Amz-Expires=3600&X-Amz-Signature=35508bb150255f2e4920971a81f1629a3687d967c1f3956deda2d2df5a8c0406&X-Amz-SignedHeaders=host&x-id=GetObject"
+            },
+            {
+                "id": 15,
+                "materia": "sistemi e reti",
+                "anno": 3,
+                "professore": "Francesco Tappi",
+                "argomento": "Server",
+                "studente": 1,
+                "foto": "https://class-mate.s3.eu-north-1.amazonaws.com/appunti/appunti_15.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIA6ODUZEUQ2A2DDDHB%2F20240525%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240525T104912Z&X-Amz-Expires=3600&X-Amz-Signature=c3dc1bdf1cd1a447f6bbaa682a1efcb9561f4628c94be75301cf677029659caa&X-Amz-SignedHeaders=host&x-id=GetObject"
+            },
+            {
+                "id": 14,
+                "materia": "informatica",
+                "anno": 3,
+                "professore": "Francesco Tappi",
+                "argomento": "HTML",
+                "studente": 1,
+                "foto": "https://class-mate.s3.eu-north-1.amazonaws.com/appunti/appunti_14.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIA6ODUZEUQ2A2DDDHB%2F20240525%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240525T104912Z&X-Amz-Expires=3600&X-Amz-Signature=d335fcb0e6eea21e0f026695cf8602ef8e085c9461efaac09f38e7cff5bac8a8&X-Amz-SignedHeaders=host&x-id=GetObject"
+            }
+        ],
+        "filtri": {
+            "materie": [
+                "informatica",
+                "italiano",
+                "sistemi e reti"
+            ],
+            "professori": [
+                "Brunella Tombetti",
+                "Francesco Tappi",
+                "Toni Greco"
+            ],
+            "anni": [
+                1,
+                3,
+                4,
+                5
+            ]
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "da gettare dal db": {
+        "id":"id studente",
+        "nome":"nome",
+        "cognome":"cognome",
+        "classe":"classe",
+        "cellulare":"cellulare",
+        "scuola":"scuola studente"
+    },
+    "da inviare al db (put)": {
+        "id":"id studente",
+        "nome":"nome",
+        "cognome":"cognome",
+        "classe":"classe",
+        "cellulare":"cellulare"
+    }
+}

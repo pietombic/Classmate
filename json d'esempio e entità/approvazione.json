@@ -1,0 +1,19 @@
+{
+    "Ricevuti dal db (utenti da approvare, uno per ogni studente)": {
+        "Nome": "nome studente",
+        "Cognome": "cognome studente",
+        "Classe": "classe studente",
+        "Scuola": "scuola studente",
+        "Cellulare": "cellulare studente",
+        "Anno": "anno studente"
+    },
+    "Inviati al db per creare gli studenti": {
+        "Nome": "nome studente",
+        "Cognome": "cognome studente",
+        "Classe": "classe studente",
+        "Scuola": "scuola studente",
+        "Cellulare": "cellulare studente",
+        "Anno": "anno studente",
+        "Coordinatore": "0, viene cambiato dalla scuola"
+    }
+}

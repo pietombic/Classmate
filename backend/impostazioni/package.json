@@ -1,0 +1,24 @@
+{
+  "name": "impostazioni",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "npm i && nodemon src/server.js",
+    "start": "node src/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "hapi": "^18.1.0",
+    "http-status": "^1.7.4",
+    "joi": "^17.13.1",
+    "joi-phone-number": "^5.1.1",
+    "nodemon": "^3.1.0",
+    "pg": "^8.11.5",
+    "typeorm": "^0.3.20"
+  }
+}
