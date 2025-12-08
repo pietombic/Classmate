@@ -17,7 +17,7 @@
     "cors": "^2.8.5",
     "dotenv": "^17.0.0",
     "express": "^5.0.0",
-    "file-type": "^19.0.0",
+    "file-type": "^21.0.0",
     "http-status": "^2.0.0",
     "image-type": "^6.0.0",
     "joi": "^18.0.0",
