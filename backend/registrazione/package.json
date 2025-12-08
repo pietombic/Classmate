@@ -14,7 +14,7 @@
     "@aws-sdk/client-s3": "^3.556.0",
     "@aws-sdk/s3-request-presigner": "^3.556.0",
     "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
+    "dotenv": "^17.0.0",
     "express": "^4.19.2",
     "http-status": "^1.7.4",
     "joi": "^17.12.3",
