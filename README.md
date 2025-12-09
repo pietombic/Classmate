@@ -69,5 +69,6 @@ This project is released under the **MIT License**.
 ## 🤝 Contact
 For questions or collaborations:  
 **[Giuliano Manzi / giuli05man@gmail.com / [LinkedIn](https://www.linkedin.com/in/giuliano-manzi-80471922b/)]**
+**[Pietro Tombaccini / ptombaccini@gmail.com / [LinkedIn](https://www.linkedin.com/in/pietro-tombaccini/)]**
 
 ---
